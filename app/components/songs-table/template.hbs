@@ -1,0 +1,51 @@
+<!-- filter section -->
+<div class="box-header">
+  <div class="filter-content">
+    <table class="table filter_table">
+      <thead>
+        <tr>
+          <th>Artist</th>
+          <td>{{chosen-select list=artistListFilter changeChosen=(action 'filterArtistAction')}}</td>
+        </tr>
+        <tr>
+          <th>Genre</th>
+          <td>{{chosen-select list=genreListFilter changeChosen=(action 'filterGenreAction')}}</td>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="filter-buttons pull-right">
+    <button type="button" class="btn btn-flat btn-primary show-filters" name="button" {{action 'showFiltersAction'}}>Show filters</button>
+    <a {{action 'clearFiltersAction'}}>
+      <span class="fa-stack clear-filter">
+        <i class="fa fa-filter"></i>
+        <i class="fa fa-times"></i>
+      </span>
+    </a>
+  </div>
+</div>
+
+<div class="songs-section">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Artist</th>
+        <th>Genre</th>
+        <th>Duration</th>
+        <th>Likes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each filteredSongs as |song|}}
+        <tr>
+          <td>{{song.name}}</td>
+          <td>{{song.artist.name}}</td>
+          <td>{{song.genre}}</td>
+          <td>{{format-date song.duration}}</td>
+          <td>{{star-rating item=song currentRating=song.stars maxRating=5 update=(action 'setRating')}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

@@ -1,8 +1,10 @@
 {
   "predef": [
+    "server",
     "document",
     "window",
-    "-Promise"
+    "-Promise",
+    "moment",
   ],
   "browser": true,
   "boss": true,

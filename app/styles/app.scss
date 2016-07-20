@@ -1,0 +1,38 @@
+.filter_table {
+  thead tr td {
+    border: 0;
+  }
+  thead tr th {
+    border: 0;
+    width: 10%;
+    text-align: right;
+  }
+}
+.filter-buttons {
+  margin: 10px 10px 15px;
+}
+.filter-content {
+  display: none;
+  padding: 5px;
+}
+.clear-filter {
+  display: none;
+  .fa-times {
+    position: relative;
+    top: 0.8em;
+    left: 0.5em;
+  }
+  .fa-filter {
+    position: relative;
+    left: 1.1em;
+  }
+}
+.fa-stack {
+  top: -0.5em;
+  left: -0.6em;
+  width: 1em;
+  height: 1em;
+}
+a:hover {
+  cursor: pointer;
+}

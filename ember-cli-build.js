@@ -2,9 +2,26 @@
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
+  const pickFiles = require('broccoli-funnel');
+  const mergeTrees = require('broccoli-merge-trees');
+
   var app = new EmberApp(defaults, {
     // Add options here
+    sassOptions: {
+      includePaths: ['app'],
+    },
+  });
+
+  const chosenImages = pickFiles('bower_components/chosen', {
+    include: ['**/*.png'],
+    destDir: '/assets',
+  });
+  const bootstrapFonts = pickFiles('bower_components/bootstrap/fonts', {
+    destDir: '/fonts',
+  });
+  const fontAwesome = pickFiles('bower_components/font-awesome/fonts', {
+    destDir: '/fonts',
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -20,5 +37,25 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  return app.toTree();
+  // css
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css.map', {
+    destDir: 'assets',
+  });
+  app.import('bower_components/chosen/chosen.min.css');
+  app.import('bower_components/font-awesome/css/font-awesome.css');
+
+  // js
+  app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+  app.import('bower_components/moment/min/moment.min.js');
+  app.import('bower_components/chosen/chosen.jquery.min.js');
+
+  const outputTree = mergeTrees([
+    fontAwesome,
+    bootstrapFonts,
+    chosenImages,
+    app.toTree(),
+  ]);
+
+  return outputTree;
 };

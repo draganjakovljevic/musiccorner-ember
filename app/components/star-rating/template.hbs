@@ -1,5 +1,5 @@
 {{#each totalStars as |star|}}
-  <span class="star-rating pointer glyphicon {{if star.full 'glyphicon-star' 'glyphicon-star-empty'}}"
+  <span class="star-rating selectable glyphicon {{if star.full 'glyphicon-star' 'glyphicon-star-empty'}}"
         {{action 'updateRating' item star.rating star.full}}>
   </span>
 {{/each}}

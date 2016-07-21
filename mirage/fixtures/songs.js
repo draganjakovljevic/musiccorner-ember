@@ -142,7 +142,7 @@ export default [{
     "id": 22,
     "name": "Girl Don't Take Your Love from Me",
     "duration": 143000,
-    "genre": "Soul",
+    "genre": "Rock",
     "stars": 2,
     "artist": {
       "name": "Michael Jackson"
@@ -156,7 +156,7 @@ export default [{
     "id": 23,
     "name": "Got to Be There",
     "duration": 123000,
-    "genre": "Soul",
+    "genre": "Classic Rock",
     "stars": 4,
     "artist": {
       "name": "Michael Jackson"
@@ -205,7 +205,7 @@ export default [{
     },
     "album": {
       "name": "Got to Be There",
-      "year": 1972,
+      "year": 1975,
       "genre": "Blues"
     }
   }, {
@@ -224,33 +224,33 @@ export default [{
     }
 
   }, {
-    "id": 99,
-    "name": "A very very ver long song name",
-    "duration": 5250123,
+    "id": 66,
+    "name": "She's a rainbow",
+    "duration": 295500,
     "genre": "Soul",
     "stars": 2,
     "artist": {
-      "name": "A very very very very very very long author name"
+      "name": "The rolling stones"
     },
     "album": {
       "name": "Got to Be There",
-      "year": 1972,
+      "year": 1980,
       "genre": "Blues"
     }
 
   }, {
-    "id": 100,
-    "name": "Another very very very very very very long song name",
-    "duration": 7250923,
-    "genre": "Soul",
+    "id": 74,
+    "name": "Jumpin' Jack Flash",
+    "duration": 350000,
+    "genre": "Rock",
     "stars": 3,
     "artist": {
-      "name": "A very very very very very very long author name"
+      "name": "The rolling stones"
     },
     "album": {
       "name": "Got to Be There",
-      "year": 1972,
-      "genre": "Blues"
+      "year": 1980,
+      "genre": "Rock"
     }
 
   }

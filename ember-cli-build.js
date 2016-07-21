@@ -44,11 +44,13 @@ module.exports = function (defaults) {
   });
   app.import('bower_components/chosen/chosen.min.css');
   app.import('bower_components/font-awesome/css/font-awesome.css');
+  app.import('bower_components/tablesorter/dist/css/theme.ice.min.css');
 
   // js
   app.import('bower_components/bootstrap/dist/js/bootstrap.js');
   app.import('bower_components/moment/min/moment.min.js');
   app.import('bower_components/chosen/chosen.jquery.min.js');
+  app.import('bower_components/tablesorter/dist/js/jquery.tablesorter.min.js');
 
   const outputTree = mergeTrees([
     fontAwesome,

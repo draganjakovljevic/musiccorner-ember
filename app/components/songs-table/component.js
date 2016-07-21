@@ -58,4 +58,9 @@ export default Ember.Component.extend({
       thisSong.save();
     },
   },
+  didRender() {
+    $('#songs-table').tablesorter({
+      theme: 'ice',
+    });
+  },
 });

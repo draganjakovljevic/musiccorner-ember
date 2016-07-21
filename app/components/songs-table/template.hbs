@@ -26,7 +26,7 @@
 </div>
 
 <div class="songs-section">
-  <table class="table">
+  <table id="songs-table" class="table tablesorter">
     <thead>
       <tr>
         <th>Name</th>
@@ -39,9 +39,9 @@
     <tbody>
       {{#each filteredSongs as |song|}}
         <tr>
-          <td>{{song.name}}</td>
-          <td>{{song.artist.name}}</td>
-          <td>{{song.genre}}</td>
+          {{link-to song.name 'home.song' song.id class='selectable' tagName='td'}}
+          {{link-to song.artist.name 'home.song' song.id class='selectable' tagName='td'}}
+          {{link-to song.genre 'home.song' song.id class='selectable' tagName='td'}}
           <td>{{format-date song.duration}}</td>
           <td>{{star-rating item=song currentRating=song.stars maxRating=5 update=(action 'setRating')}}</td>
         </tr>

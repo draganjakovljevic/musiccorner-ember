@@ -44,7 +44,7 @@ module.exports = function (defaults) {
   });
   app.import('bower_components/chosen/chosen.min.css');
   app.import('bower_components/font-awesome/css/font-awesome.css');
-  app.import('bower_components/tablesorter/dist/css/theme.ice.min.css');
+  app.import('bower_components/tablesorter/dist/css/theme.blue.min.css');
 
   // js
   app.import('bower_components/bootstrap/dist/js/bootstrap.js');

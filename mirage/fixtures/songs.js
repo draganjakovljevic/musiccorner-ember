@@ -10,7 +10,8 @@ export default [{
     "album": {
       "name": "Blur",
       "year": 1997,
-      "genre": "Indie"
+      "genre": "Indie",
+      "image": "http://www.martinrecs.com/wp-content/uploads/2013/05/BLUR-The-magic-whip.jpg"
     }
   }, {
     "id": 1,
@@ -24,7 +25,8 @@ export default [{
     "album": {
       "name": "The Magic Whip",
       "year": 2015,
-      "genre": "Alternative/Indie"
+      "genre": "Alternative/Indie",
+      "image": "http://www.martinrecs.com/wp-content/uploads/2013/05/BLUR-The-magic-whip.jpg"
     }
   }, {
     "id": 2,
@@ -38,7 +40,8 @@ export default [{
     "album": {
       "name": "Magical Mystery Tour",
       "year": 1967,
-      "genre": "Rock"
+      "genre": "Rock",
+      "image": "http://orig07.deviantart.net/ff3f/f/2007/298/6/8/i_am_the_walrus_by_mv1008.jpg"
     }
   }, {
     "id": 3,
@@ -52,7 +55,8 @@ export default [{
     "album": {
       "name": "Abbey Road",
       "year": 1969,
-      "genre": "Rock"
+      "genre": "Rock",
+      "image": "http://i1.liverpoolecho.co.uk/incoming/article3269299.ece/ALTERNATES/s1200/the-beatles-abbey-road-album-cover-apple-corps-ltd-2009-pa-wire-460-524927147.jpg"
     }
   }, {
     "id": 4,
@@ -66,7 +70,8 @@ export default [{
     "album": {
       "name": "Are You Experienced",
       "year": 1967,
-      "genre": "Classic Rock"
+      "genre": "Classic Rock",
+      "image": "http://img.wennermedia.com/featured/rs-136804-5c60b6f07182074469636bb45da1fd26b8d2a04f.jpg"
     }
   }, {
     "id": 5,
@@ -80,7 +85,8 @@ export default [{
     "album": {
       "name": "Blak And Blu",
       "year": 2012,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8VDVT4dm28V12-F_FKOGsmAfAbzdWGcZ3bytz8uKG1q_3To1V"
     }
   }, {
     "id": 6,
@@ -94,7 +100,8 @@ export default [{
     "album": {
       "name": "Blak And Blu",
       "year": 2012,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8VDVT4dm28V12-F_FKOGsmAfAbzdWGcZ3bytz8uKG1q_3To1V"
     }
   }, {
     "id": 7,
@@ -108,7 +115,8 @@ export default [{
     "album": {
       "name": "The Story of Sunny Boy Slim",
       "year": 2015,
-      "genre": "Rock"
+      "genre": "Rock",
+      "image": "http://www.alinernote.com/wp-content/uploads/2015/09/gary-clark-jr-new-album-620x350.png"
     }
   }, {
     "id": 20,
@@ -122,7 +130,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1972,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "http://i22.photobucket.com/albums/b349/jonkmusic/GotToBeThere.jpg"
     }
   }, {
     "id": 21,
@@ -136,7 +145,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1972,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "http://i22.photobucket.com/albums/b349/jonkmusic/GotToBeThere.jpg"
     }
   }, {
     "id": 22,
@@ -150,7 +160,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1972,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "http://i22.photobucket.com/albums/b349/jonkmusic/GotToBeThere.jpg"
     }
   }, {
     "id": 23,
@@ -164,7 +175,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1972,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "http://i22.photobucket.com/albums/b349/jonkmusic/GotToBeThere.jpg"
     }
   }, {
     "id": 24,
@@ -178,7 +190,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1972,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "http://i22.photobucket.com/albums/b349/jonkmusic/GotToBeThere.jpg"
     }
   }, {
     "id": 25,
@@ -192,7 +205,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1972,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "http://i22.photobucket.com/albums/b349/jonkmusic/GotToBeThere.jpg"
     }
   }, {
     "id": 26,
@@ -206,7 +220,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1975,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "http://i22.photobucket.com/albums/b349/jonkmusic/GotToBeThere.jpg"
     }
   }, {
     "id": 27,
@@ -220,7 +235,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1972,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "https://s-media-cache-ak0.pinimg.com/600x315/0c/f7/6d/0cf76de36a73862350ad707597e369b3.jpg"
     }
 
   }, {
@@ -235,7 +251,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1980,
-      "genre": "Blues"
+      "genre": "Blues",
+      "image": "https://lh3.googleusercontent.com/-W0iqFOQRYEs/U7AGfi6AN8I/AAAAAAAAejs/W1LrkQs9l40/w618-h350-no/rolling-stones.png"
     }
 
   }, {
@@ -250,7 +267,8 @@ export default [{
     "album": {
       "name": "Got to Be There",
       "year": 1980,
-      "genre": "Rock"
+      "genre": "Rock",
+      "image": "https://lh3.googleusercontent.com/-W0iqFOQRYEs/U7AGfi6AN8I/AAAAAAAAejs/W1LrkQs9l40/w618-h350-no/rolling-stones.png"
     }
 
   }

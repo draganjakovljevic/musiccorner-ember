@@ -1,2 +1,67 @@
-<h3>   {{model.name}}
-</h3>
+<div class="container">
+
+  <nav class="artist-section">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>All songs by {{model.artist.name}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each otherSongsPerArtist as |song|}}
+          <tr>
+            <td>
+              {{song.name}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </nav>
+
+  <article>
+    <div class="row song-title-bar">
+      <span class="col-md-6">
+        <h1>{{model.name}}</h1><br/>
+      </span>
+      <span class="col-md-6 rating-bar">
+        {{star-rating item=model currentRating=model.stars maxRating=5 update=(action 'setRating')}}
+      </span>
+    </div>
+    <div class="row song-title-bar">
+      <span class="col-md-12">
+        <img src="{{model.album.image}}" alt="Smiley face" border="5">
+      </span>
+    </div>
+    <div class="song-details-container">
+      <div class="row">
+        <p class="col-md-6">Duration</p>
+        <p class="col-md-6 align-right">{{format-date model.duration}}</p>
+      </div>
+      <hr />
+      <div class="row">
+        <p class="col-md-6">Genre</p>
+        <p class="col-md-6 align-right">{{model.genre}}</p>
+      </div>
+      <hr />
+      <div class="row">
+        <p {{action 'toggleDetails'}} class="col-md-12 selectable">Album information <span class="fa {{if detailsClosed 'fa-caret-down' 'fa fa-caret-up'}}" /></p>
+      </div>
+      <div class="hidden-details-dropdown {{if detailsClosed 'closed'}}">
+        <div class="row">
+          <p class="col-md-6">Name</p>
+          <p class="col-md-6 align-right">{{model.album.name}}</p>
+        </div>
+        <div class="row">
+          <p class="col-md-6">Year</p>
+          <p class="col-md-6 align-right">{{model.album.year}}</p>
+        </div>
+        <div class="row">
+          <p class="col-md-6">Genre</p>
+          <p class="col-md-6 align-right">{{model.album.genre}}</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+</div>

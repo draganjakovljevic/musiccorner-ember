@@ -60,7 +60,7 @@ export default Ember.Component.extend({
   },
   didRender() {
     $('#songs-table').tablesorter({
-      theme: 'ice',
+      theme: 'blue',
     });
   },
 });

@@ -6,6 +6,7 @@ export default Model.extend({
   genre: attr('string'),
   duration: attr('number'),
   stars: attr('number'),
+  image: attr('string'),
   artist: attr(),
   album: attr(),
 });
